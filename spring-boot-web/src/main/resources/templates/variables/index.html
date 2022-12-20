@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title> //titulo es una variable que viene del controlador
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<ul>
+<li><a th:href="@{/variables/string/} + 'Hola Seba'">/variables/string/Hola Seba</a></li>
+<li><a th:href="@{/variables/string/} + 'Que tal John'">/variables/string/Que tal John</a></li>
+<li><a th:href="@{/variables/string/} + ${'Saludos Seba'} + '/' + {'7'}">/variables/string/Saludos Seba/7</a></li>
+
+</ul>
+
+
+</body>
+</html>
